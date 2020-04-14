@@ -1,0 +1,1 @@
+Le parser de l'xml se fera depuis la console d'Import.
