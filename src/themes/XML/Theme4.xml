@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+<main>
+	<component id="1">
+		<question> Ecrivez votre question </question>
+		<answer> reponse </answer>
+	</component>
+	<component id="2">
+		<question> Ecrivez votre question </question>
+		<answer> reponse </answer>
+	</component>
+	<component id="3">
+		<question> Ecrivez votre question </question>
+		<answer> reponse </answer>
+	</component>
+	<component id="4">
+		<question> Ecrivez votre question </question>
+		<answer> reponse </answer>
+	</component>
+	<component id="5">
+		<question> Ecrivez votre question </question>
+		<answer> reponse </answer>
+	</component>
+	<component id="6">
+		<question> Ecrivez votre question </question>
+		<answer> reponse </answer>
+	</component>
+	<component id="7">
+		<question> Ecrivez votre question </question>
+		<answer> reponse </answer>
+	</component>
+	<component id="8">
+		<question> Ecrivez votre question </question>
+		<answer> reponse </answer>
+	</component>
+	<component id="9">
+		<question> Ecrivez votre question </question>
+		<answer> reponse </answer>
+	</component>
+	<component id="10">
+		<question> Ecrivez votre question </question>
+		<answer> reponse  </answer>
+	</component>
+</main>
