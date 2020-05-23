@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Theme Simpson -->
+<Themes>
+     <Theme ID="1">
+          <Question>Qui est le père de Bart ?</Question >
+          <Reponse>Homer</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="2">
+          <Question>Quel est le nom de la ville ?</Question>
+          <Reponse>Springfield</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="3">
+          <Question>Comment se nomme le clown ?</Question>
+          <Reponse>Krusty</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="4">
+          <Question>Quelle est la couleur de la voiture d'Homer ?</Question>
+          <Reponse>Rose</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="5">
+          <Question>Quelle est la couleur de la coupe de cheveux de Marge ?</Question>
+          <Reponse>Rose</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="6">
+          <Question>Quel est le prénom du patron de la centrale nucléaire ?</Question>
+          <Reponse>Burns</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="7">
+          <Question>Dans le générique, sur quoi s'asseoient les Simpsons ?</Question>
+          <Reponse>Canapé</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="8">
+          <Question>Combien de saisons se sont déroulées ?</Question>
+          <Reponse>32</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="9">
+          <Question>Qui est l'ennemi juré de Bart Simpson ?</Question>
+          <Reponse>Tahiti Bob</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="10">
+          <Question>Etes-vous satisfait du Quizz ?</Question>
+          <Reponse>Oui</Reponse>
+          <Point>10</Point>
+     </Theme>
+</Themes>

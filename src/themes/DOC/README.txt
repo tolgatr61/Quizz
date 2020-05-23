@@ -1,1 +1,0 @@
-Suivez la structure du fichier Structure.XML et n'oubliez pas de déclarer votre fichier dans le Main
