@@ -23,7 +23,7 @@
      </Theme>
      <Theme ID="5">
           <Question>Quelle est la couleur de la coupe de cheveux de Marge ?</Question>
-          <Reponse>Rose</Reponse>
+          <Reponse>Bleu</Reponse>
           <Point>10</Point>
      </Theme>
      <Theme ID="6">
@@ -33,7 +33,7 @@
      </Theme>
      <Theme ID="7">
           <Question>Dans le générique, sur quoi s'asseoient les Simpsons ?</Question>
-          <Reponse>Canapé</Reponse>
+          <Reponse>Canape</Reponse>
           <Point>10</Point>
      </Theme>
      <Theme ID="8">
