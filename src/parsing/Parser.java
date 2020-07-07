@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Collections;
   
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -30,10 +31,23 @@ public class Parser {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
 
+        // Generate random array of all the themes inside XML repository.
+
+        final File folder = new File("src/parsing/XML");
+        List<String> xmlFiles = new ArrayList<String>();
+        search(".*\\.xml", folder, xmlFiles);
+        Collections.shuffle(xmlFiles);
+
+        /*
+        for (String s : xmlFiles) {
+            System.out.println(s);
+        }
+        */
+
         // Load the input XML document, parse it and return an instance of the
         // Document class.
 
-        Document document = builder.parse(new File("src/parsing/XML/ThemeSimpson.xml"));
+        Document document = builder.parse(new File(xmlFiles.get(0)));
 
         List<Themes> themes = new ArrayList<Themes>();
         NodeList nodeList = document.getDocumentElement().getChildNodes();
@@ -70,6 +84,22 @@ public class Parser {
 
     public List<Themes> getThematics() {
         return this.thematics;
+    }
+
+    public static void search(final String pattern, final File folder, List<String> result) {
+        for (final File f : folder.listFiles()) {
+
+            if (f.isDirectory()) {
+                search(pattern, f, result);
+            }
+
+            if (f.isFile()) {
+                if (f.getName().matches(pattern)) {
+                    result.add(f.getAbsolutePath());
+                }
+            }
+
+        }
     }
 
 }

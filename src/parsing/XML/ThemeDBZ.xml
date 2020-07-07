@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Theme DBZ -->
+<Themes>
+     <Theme ID="1">
+          <Question>Qui est le père de Sangohan ?</Question >
+          <Reponse>Sangoku</Reponse>
+          <Point>15</Point>
+     </Theme>
+     <Theme ID="2">
+          <Question>Qui est le père de Trunks ?</Question>
+          <Reponse>Vegeta</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="3">
+          <Question>Qui est le vilain à la peau rose ?</Question>
+          <Reponse>Buu</Reponse>
+          <Point>30</Point>
+     </Theme>
+     <Theme ID="4">
+          <Question>Quelle est la technique de Sangoku ?</Question>
+          <Reponse>Kamehameha</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="5">
+          <Question>Quelle est la technique ultime de Sangoku ?</Question>
+          <Reponse>Genkidama</Reponse>
+          <Point>50</Point>
+     </Theme>
+     <Theme ID="6">
+          <Question>Quel planète a envahit Freezer ?</Question>
+          <Reponse>Namek</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="7">
+          <Question>Quel est l'évènement de Cell ?</Question>
+          <Reponse>Tournoi</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="8">
+          <Question>Qui a créer les cyborgs ?</Question>
+          <Reponse>Dr Gero</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="9">
+          <Question>En qui se réincarne Buu ?</Question>
+          <Reponse>Uub</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="10">
+          <Question>Quel est le nom de la fusion entre Goten et Trunks ?</Question>
+          <Reponse>Gotrunks</Reponse>
+          <Point>100</Point>
+     </Theme>
+</Themes>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Theme Naruto -->
+<Themes>
+     <Theme ID="1">
+          <Question>Qui est le père de Naruto (nom complet) ?</Question >
+          <Reponse>Namikaze Minato</Reponse>
+          <Point>15</Point>
+     </Theme>
+     <Theme ID="2">
+          <Question>Qui est le 1ère Hokage (nom complet) ?</Question>
+          <Reponse>Senju Hashirama</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="3">
+          <Question>Quelle est la technique de Naruto ?</Question>
+          <Reponse>Rasengan</Reponse>
+          <Point>30</Point>
+     </Theme>
+     <Theme ID="4">
+          <Question>Quelle est la technique de Sasuke ?</Question>
+          <Reponse>Chidori</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="5">
+          <Question>Quelle est la couleur de la coupe de cheveux de Sakura ?</Question>
+          <Reponse>Rose</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="6">
+          <Question>Qui est le Jinchuriki du Biju à 8 queues ?</Question>
+          <Reponse>Bee</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="7">
+          <Question>Qui est le second sensei de Naruto ?</Question>
+          <Reponse>Jiraya</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="8">
+          <Question>Combien de saisons se sont déroulées ?</Question>
+          <Reponse>20</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="9">
+          <Question>Qui est l'homme ressemblant à un serpent ?</Question>
+          <Reponse>Orochimaru</Reponse>
+          <Point>10</Point>
+     </Theme>
+     <Theme ID="10">
+          <Question>Comment se nomme réellement Kyubi ?</Question>
+          <Reponse>Kurama</Reponse>
+          <Point>100</Point>
+     </Theme>
+</Themes>
