@@ -4,7 +4,7 @@
      <Theme ID="1">
           <Question>Qui est le père de Bart ?</Question >
           <Reponse>Homer</Reponse>
-          <Point>61</Point>
+          <Point>15</Point>
      </Theme>
      <Theme ID="2">
           <Question>Quel est le nom de la ville ?</Question>

@@ -20,9 +20,9 @@ public class BValider extends JButton implements ActionListener {
     public void actionPerformed(ActionEvent e){
 
         if (answerField.getText().equals(state.getAnswer())){
-            state.setNextState();
-            System.out.println(state.getPoint());
+            
             state.setUserPoint(state.getUserPoint() + state.getPoint());
+            state.setNextState();
 
             if (state.getNumQuestion() >= 10) {
                 this.setVisible(false);
