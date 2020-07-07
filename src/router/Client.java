@@ -16,5 +16,9 @@ public class Client {
         State state = new State();
         new GenerateView(state);
 
+        //TODO: Récuperer les sockets connecter au serveur et en récuperer leur état.
+        // Idées : On renvoie qui a gagné avec quel score lorsque les deux ont finis.
+        // On rend visible la fenêtre quand il y'a 2 clients connectés.
+        // -> setVisible(true) la vue lorsque les deux appuient sur un bouton Start.
     }
 }
