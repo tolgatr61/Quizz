@@ -1,9 +1,16 @@
 package src.view;
 
-public class View {
-    public static void main(String[] args) {
+import src.modele.*;
+import java.io.IOException;
+import javax.xml.parsers.ParserConfigurationException;
+import org.xml.sax.SAXException;
 
-        new GenerateView();
+public class View {
+    public static void main(String[] args) throws ParserConfigurationException,
+    SAXException, IOException {
+
+        State state = new State();
+        new GenerateView(state);
 
         }
 }

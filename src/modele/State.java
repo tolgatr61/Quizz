@@ -7,21 +7,25 @@ import src.parsing.*;
 import java.util.LinkedHashMap;
 import java.util.ArrayList;
 
-public class State {
+public class State extends AbstractModeleEcoutable {
 
     private LinkedHashMap<String, String> allStates;
     private Parser pars;
     private int numQuestion;
     private ArrayList<String> state;
     private ArrayList<Integer> points;
+    private Integer userPoint;
 
     public State() throws ParserConfigurationException,
     SAXException, IOException {
+        super();
         pars = new Parser();
         pars.Parse();
         allStates = saveStates();
         state = generateNextState();
         points = setPoints();
+        userPoint = 0;
+        this.ecouteurs= new ArrayList<>();
     }
 
     public ArrayList<String> generateNextState() {
@@ -41,6 +45,7 @@ public class State {
     public void setNextState() {
         this.numQuestion += 1;
         this.setState(this.generateNextState());
+        fireChangement();
     }
 
     public ArrayList<Integer> setPoints() {
@@ -62,8 +67,18 @@ public class State {
         return this.points.get(this.numQuestion);
     }
 
+    public void setUserPoint(Integer userPoint) {
+        this.userPoint = userPoint;
+        fireChangement();
+    }
+
+    public Integer getUserPoint() {
+        return this.userPoint;
+    }
+
     public void setState(ArrayList<String> state) {
         this.state = state;
+        fireChangement();
     }
 
     public ArrayList<String> getState() {
