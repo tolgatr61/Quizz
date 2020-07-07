@@ -5,9 +5,9 @@ public class Themes {
         private String ID;
         private String Question;
         private String Reponse;
-        private int point;
+        private Integer point;
      
-        public Themes(String ID, String Question, String Reponse, int point) {
+        public Themes(String ID, String Question, String Reponse, Integer point) {
              this.ID = ID;
              this.Question = Question;
              this.Reponse = Reponse;
@@ -31,7 +31,7 @@ public class Themes {
              return this.Reponse;
         }
 
-        public int getPoint() {
+        public Integer getPoint() {
              return this.point;
         }
 

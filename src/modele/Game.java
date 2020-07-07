@@ -4,7 +4,6 @@ import java.util.Scanner;
 import java.io.IOException;
 import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.SAXException;
-import src.parsing.*;
 
 public class Game {
 
@@ -13,8 +12,7 @@ public class Game {
     public void Play() throws ParserConfigurationException,
     SAXException, IOException {
 
-        Parser pars = new Parser();
-        pars.Parse();
+        State state = new State();
 
         System.out.println("Bienvenue sur le Quizz ! : \n");
 
@@ -22,18 +20,20 @@ public class Game {
 
         for (int numQuestion = 0; numQuestion < 10; numQuestion++ ){
 
-            System.out.println(pars.getThematics().get(numQuestion).getQuestion());
+            System.out.println(state.getQuestion());
             System.out.println("Ecrivez votre reponse : \n");
             
             Scanner sc = new Scanner(System.in);
             String answer = sc.nextLine();
 
-            if (pars.getThematics().get(numQuestion).getReponse().equals(answer)) {
-                this.userPoint += pars.getThematics().get(numQuestion).getPoint();
+            if (state.getAnswer().equals(answer)) {
+                this.userPoint += state.getPoint();
                 System.out.println("Vrai , vous avez " + String.valueOf(this.userPoint) + " points ! \n ");
+                state.setNextState();
             }
-            else if (!(pars.getThematics().get(numQuestion).getReponse().equals(answer))){
-                System.out.println("Faux , la bonne réponse est : " + pars.getThematics().get(numQuestion).getReponse() + " , vous avez " + String.valueOf(this.userPoint) + " points ! \n ");
+            else if (!(state.getAnswer().equals(answer))){
+                System.out.println("Faux , la bonne réponse est : " + state.getAnswer() + " , vous avez " + String.valueOf(this.userPoint) + " points ! \n ");
+                state.setNextState();
             }
 
             if (numQuestion == 9) {

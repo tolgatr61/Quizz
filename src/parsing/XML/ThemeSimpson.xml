@@ -4,7 +4,7 @@
      <Theme ID="1">
           <Question>Qui est le père de Bart ?</Question >
           <Reponse>Homer</Reponse>
-          <Point>10</Point>
+          <Point>61</Point>
      </Theme>
      <Theme ID="2">
           <Question>Quel est le nom de la ville ?</Question>
@@ -14,7 +14,7 @@
      <Theme ID="3">
           <Question>Comment se nomme le clown ?</Question>
           <Reponse>Krusty</Reponse>
-          <Point>10</Point>
+          <Point>30</Point>
      </Theme>
      <Theme ID="4">
           <Question>Quelle est la couleur de la voiture d'Homer ?</Question>
@@ -49,6 +49,6 @@
      <Theme ID="10">
           <Question>Etes-vous satisfait du Quizz ?</Question>
           <Reponse>Oui</Reponse>
-          <Point>10</Point>
+          <Point>100</Point>
      </Theme>
 </Themes>

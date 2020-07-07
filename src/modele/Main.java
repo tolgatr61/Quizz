@@ -10,11 +10,18 @@ public class Main {
 	public static void main(String[] args) throws ParserConfigurationException,
     SAXException, IOException {
 	
-		//Parser pars = new Parser();
-        //pars.Parse();
-        //System.out.println(pars.getThematics().get(9).getQuestion());
-		//System.out.println(pars.getThematics().get(9).getReponse());
-		//System.out.println(pars.getThematics().get(9).getPoint());
+		/*
+		State state = new State();
+		//System.out.println(state.getStates());
+		//System.out.println(state.getQuestions());
+		//System.out.println(state.getAnswers());
+		state.setNextState();
+		System.out.println(state.getPoints());
+		System.out.println(state.getQuestions());
+		System.out.println(state.getQuestion());
+		System.out.println(state.getAnswer());
+		System.out.println(state.getPoint());
+		*/
 
 		Game g = new Game();
 		g.Play();
