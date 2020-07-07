@@ -10,4 +10,9 @@
     java -cp "build/classes" src.view.View
 
     ou exécuter exe2.bat.
-    ou jar 
+    ou jar
+
+    Jeu en réseau :
+        Executer exeServer.bat sur une machine.
+        Executer exeClient.bat sur les machines qui veulent jouer.
+        (En cours de développement ...)
