@@ -3,7 +3,10 @@
 
 # Règles
     30 secondes par question. Pour le moment, les réponses doivent avoir un orthographe précis, majuscule y compris.
-    Les points sont générés en fonction du thème et de la difficulté de la question. 
+    Les points sont générés en fonction du thème et de la difficulté de la question.
+
+# Ajoutez vos propres thèmes.
+    Déposez dans le répertoire XML vos thèmes en suivant le modèle du fichier StructXML (10 questions maximum). (directory : "src/parsing/XML").
 
 # Prérequis :
     Java SDK.
