@@ -6,6 +6,7 @@ import org.xml.sax.SAXException;
 import src.parsing.*;
 import java.util.LinkedHashMap;
 import java.util.ArrayList;
+import java.util.Timer.*;
 
 public class State extends AbstractModeleEcoutable {
 
@@ -15,6 +16,7 @@ public class State extends AbstractModeleEcoutable {
     private ArrayList<String> state;
     private ArrayList<Integer> points;
     private Integer userPoint;
+    private TimeCountRunner timeCounter;
 
     public State() throws ParserConfigurationException,
     SAXException, IOException {
@@ -25,6 +27,7 @@ public class State extends AbstractModeleEcoutable {
         state = generateNextState();
         points = setPoints();
         userPoint = 0;
+        timeCounter = new TimeCountRunner(this);
         this.ecouteurs= new ArrayList<>();
     }
 
@@ -130,6 +133,14 @@ public class State extends AbstractModeleEcoutable {
 
     public int getNumQuestion() {
         return this.numQuestion;
+    }
+
+    public void generateCountTimer() {
+        this.timeCounter.launchTimer();
+    }
+
+    public TimeCounter getTimeCounter() {
+        return this.timeCounter.getTimeCount();
     }
 
 }

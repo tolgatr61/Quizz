@@ -13,11 +13,10 @@ public class Game {
     SAXException, IOException {
 
         State state = new State();
-
         System.out.println("Bienvenue sur le Quizz ! : \n");
 
         System.out.println("----------------------------------- Questions -----------------------------------");
-
+        /*
         for (int numQuestion = 0; numQuestion < 10; numQuestion++ ){
 
             System.out.println(state.getQuestion());
@@ -42,6 +41,6 @@ public class Game {
                 System.out.println("\n Vous avez obtenu " + String.valueOf(this.userPoint) + " points ! ");
             }
         }
-
+        */
     }
 }

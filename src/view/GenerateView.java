@@ -20,6 +20,7 @@ public class GenerateView extends JFrame {
         this.add(new PanelNord(state), BorderLayout.NORTH);
         this.add(new PanelCenter(state), BorderLayout.CENTER);
         this.add(new PanelSud(state), BorderLayout.SOUTH);
+        this.add(new PanelEast(state), BorderLayout.WEST);
 
         this.setVisible(true); //permet que la fenetre soit visible
 

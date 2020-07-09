@@ -16,7 +16,7 @@ public class PanelNord extends JPanel implements EcouteurModele {
         this.state.ajoutEcouteur(this);
 
         this.label1 = new JLabel("Question");
-        label1.setFont(new Font("Serif", Font.PLAIN, 20));
+        label1.setFont(new Font("Serif", Font.PLAIN, 28));
         label1.setText(state.getQuestion());
         this.add(label1);
 
