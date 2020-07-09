@@ -21,7 +21,6 @@ public class TimeCounter extends TimerTask {
         if (this.questionTime == 30) {
             this.questionTime = 0;
             this.state.setNextState();
-            System.out.println(this.state.getQuestion());
         }
         else {
             this.questionTime += 1;

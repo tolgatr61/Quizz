@@ -1,0 +1,3 @@
+prérequis : fichier manifest.txt menant à la classe à exécuter
+puis dans un terminal :
+jar -cfvm view.jar manifest.txt -C build/ . src/ 
