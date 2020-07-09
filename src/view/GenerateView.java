@@ -11,7 +11,7 @@ public class GenerateView extends JFrame {
     public GenerateView(State state) {
 
         this.setTitle("Quizz"); // Titre de la fenêtre.
-        this.setSize(600,400); // Taille de la fenêtre. (Longueur, Hauteur)
+        this.setSize(1000,400); // Taille de la fenêtre. (Largeur, Longueur)
         this.setMinimumSize(new Dimension(400,400)); // Taille minimale de la fenêtre.
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Lorsque l'on clique sur fermer, la fenetre se ferme.
         this.setResizable(true); // Permet de resize la fenêtre.
@@ -24,5 +24,5 @@ public class GenerateView extends JFrame {
 
         this.setVisible(true); //permet que la fenetre soit visible
 
-    }
+    }   
 }

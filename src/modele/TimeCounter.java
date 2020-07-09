@@ -13,15 +13,18 @@ public class TimeCounter extends TimerTask {
     }
 
     public void run() {
+
+        if (this.state.getNumQuestion() > 9) {
+            return;
+        }
+
         if (this.questionTime == 30) {
             this.questionTime = 0;
             this.state.setNextState();
+            System.out.println(this.state.getQuestion());
         }
         else {
             this.questionTime += 1;
-        }
-        if (this.questionTime == 1) {
-            System.out.println(this.state.getQuestion());
         }
     }
 

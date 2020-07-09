@@ -12,10 +12,10 @@ public class PanelCenter extends JPanel {
     public PanelCenter(State state) {
         this.state = state;
 
-        this.setLayout(new FlowLayout(FlowLayout.CENTER,100,50));
+        this.setLayout(new FlowLayout(FlowLayout.CENTER,50,50));
 
         AnswerField answField = new AnswerField(state);
-		answField.setColumns(20);
+		answField.setColumns(40);
         this.add(answField);
 
         BValider bValider = new BValider(state, answField);

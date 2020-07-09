@@ -9,7 +9,7 @@ public class AnswerField extends JTextField {
     private State state;
 
     public AnswerField(State state) {
-        super("Reponse", 20);
+        super("", 20);
         this.state = state;
     }
     

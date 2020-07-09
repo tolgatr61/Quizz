@@ -21,6 +21,7 @@ public class BValider extends JButton implements ActionListener {
 
         if (answerField.getText().equals(state.getAnswer())){
             
+            answerField.setText("");
             state.setUserPoint(state.getUserPoint() + state.getPoint());
             state.setNextState();
 

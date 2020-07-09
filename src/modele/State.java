@@ -48,6 +48,7 @@ public class State extends AbstractModeleEcoutable {
     public void setNextState() {
         this.numQuestion += 1;
         this.setState(this.generateNextState());
+        this.getTimeCounter().setQuestionTime(0);
         fireChangement();
     }
 
