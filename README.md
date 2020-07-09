@@ -1,6 +1,10 @@
 # Quizz
     Quizz en réseau de 10 manches via Java. Projet personnel.
 
+# Règles
+    30 secondes par question. Pour le moment, les réponses doivent avoir un orthographe précis, majuscule y compris.
+    Les points sont générés en fonction du thème et de la difficulté de la question. 
+
 # Prérequis :
     Java SDK.
 
