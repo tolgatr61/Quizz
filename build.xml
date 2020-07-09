@@ -1,0 +1,33 @@
+<project name="Quizz" default="main" basedir=".">
+  <target name="clean">
+    <delete dir="build"/>
+  </target>
+
+  <target name="compile">
+    <mkdir dir="build/classes"/>
+    <javac srcdir="src" destdir="build/classes" includeantruntime="false"/>
+  </target>
+
+  <target name="jar" depends="compile">
+    <mkdir dir="dist/jar"/>
+    <jar destfile="dist/jar/Vue.jar" basedir="build/classes">
+      <manifest>
+        <attribute name="Main-Class" value="src.view.View"/>
+      </manifest>
+    </jar>
+  </target>
+
+  <target name="run" depends="jar">
+    <java jar="dist/jar/Vue.jar" fork="true"/>
+  </target>
+
+  <target name="javadoc">
+    <javadoc sourcepath="src/modele" destdir="doc">
+      <fileset dir="src" defaultexcludes="yes">
+        <include name="**"/>
+      </fileset>
+    </javadoc>
+  </target>
+
+  <target name="main" depends="clean,run"/>
+</project>

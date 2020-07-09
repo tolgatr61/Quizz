@@ -1,6 +1,7 @@
 package src.router;
 
 import java.net.*;
+import java.util.*;
 import java.io.*;
 
 import javax.sound.sampled.Port;
@@ -15,12 +16,19 @@ public class Server {
         System.out.println("Server succesfuly online with Port : 4999.\nWaiting for client connections...");
         Boolean run = true;
 
+        ArrayList<Socket> lSocket = new ArrayList<Socket>();
+
         Integer clientNumber = 0;
 
-        while (run = true){
+        while (run == true){
             Socket s = ss.accept();
+
+            lSocket.add(s);
+
             clientNumber += 1;
             System.out.println("Client : " + String.valueOf(clientNumber) + " succesfuly connected.");
+
+            System.out.println(lSocket);
         }
     }
 }

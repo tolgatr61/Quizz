@@ -16,8 +16,11 @@
     javac -d "build/classes" src/view/*.java
     java -cp "build/classes" src.view.View
 
-    ou exécuter exe2.bat.
-    ou jar
+    ou exeVue.bat
+    ou java -jar dist/jar/Vue.jar
+
+    # Prérequis Ant :
+        ou ant compile puis ant run.
 
     Jeu en réseau :
         Executer exeServer.bat sur une machine.
